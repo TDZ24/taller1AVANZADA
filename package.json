@@ -1,0 +1,17 @@
+{
+  "name": "funcionesavanzadas",
+  "version": "1.0.0",
+  "description": "taller1 avanzada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "functions",
+    "arrowfunctions",
+    "callbacks",
+    "promises"
+  ],
+  "author": "Thomas Zuluaga",
+  "license": "ISC"
+}
