@@ -1,10 +1,10 @@
 // Función para crear un objeto Padawan
 function crearPadawan(nombre, planeta, edad, estatura) {
     return {
-      nombre: nombre,
-      planeta: planeta,
-      edad: edad,
-      estatura: estatura
+      nombre: 'Thomas',
+      planeta: 'Tierra',
+      edad: 4,
+      estatura: 1.20
     };
   }
   
@@ -18,31 +18,25 @@ function crearPadawan(nombre, planeta, edad, estatura) {
   }
   
   // Ejemplo de uso
-  const padawan1 = crearPadawan("Luke Skywalker", "Tatooine", 19, 1.72);
-  asignarActividad(padawan1); // Debe mostrar "Luke Skywalker debe practicar el manejo del sable de luz."
+  const padawan1 = crearPadawan();
+  asignarActividad(padawan1); 
 
+//Funcion Flecha
 
-/*Crear un nuevo proyecto de Node.js:
+const namePadawan = (nombre, planeta, edad, estatura) => ({
+  nombre: 'Jeronimo',
+  planeta:'Marte',
+  edad: 54,
+  estatura: 1.80
+});
 
-Abre una terminal y navega a la carpeta donde quieras crear el proyecto.
-Ejecuta el comando npm init para crear un nuevo archivo package.json para tu proyecto. Sigue las instrucciones en la consola para completar la información requerida.
-Esto creará un proyecto Node.js básico con un archivo package.json que contiene la información de tu proyecto y las dependencias que puedas instalar.
-Crear un archivo JavaScript para el programa:
+const Actividad = (npadawan) => {
+  if (npadawan.edad > 15) {
+    console.log(`${npadawan.nombre} debe practicar el manejo de la fuerza.`);
+  } else {
+    console.log(`${npadawan.nombre} debe practicar el manejo del sable de luz.`);
+  }
+};
 
-Crea un archivo llamado padawan.js en la raíz del proyecto.
-En este archivo, define las funciones necesarias para crear y asignar actividades a los Padawans.
-Definir la función para crear un objeto Padawan:
-
-En el archivo padawan.js, define una función llamada crearPadawan que tome como parámetros nombre, planeta, edad y estatura.
-Dentro de la función, crea un objeto con las propiedades nombre, planeta, edad y estatura y devuélvelo.
-Definir la función secundaria para asignar la actividad:
-
-En el archivo padawan.js, define una función llamada asignarActividad que tome como parámetro un objeto Padawan.
-Dentro de la función, comprueba la edad del Padawan y muestra en la consola la actividad correspondiente (Manejo de la fuerza si es menor de 15 años, Manejo del sable de luz si es mayor o igual a 15 años).
-Probar el programa en la consola npm:
-
-Abre una terminal y navega a la carpeta de tu proyecto.
-Ejecuta el comando node padawan.js para ejecutar el programa.
-Crea un objeto Padawan con la función crearPadawan y luego llama a la función asignarActividad con ese objeto como parámetro.
-Deberías ver en la consola la actividad asignada al Padawan.
- */
+const Padawan1 = namePadawan();
+Actividad(Padawan1); 
